@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>PyCharm (and in fact all the JetBrains Software) have the ability to
+    create a template that is used on all source files.<br>We can craete them for Python, HTML, and many more languages
+    and frameworks.<br>This FAQ shows you how to create:</p>
+<ul>
+    <li>A Header file for Python Source Files</li>
+</ul>
+<ul>
+    <li>A Stub File for a Python Script</li>
+</ul>
+<p>Open Pycharm</p>
+<p>Click on the Hamburger Icon</p>
+<p>Click on the File menu Item</p>
+<p>Click on Settings</p>
+<p></p>
+<blockquote>
+    <p><strong>Note: </strong>To bypass these steps use:</p>
+    <ul>
+        <li><kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>S</kbd> (PC), or</li>
+        <li><kbd>CMD</kbd> + <kbd>,</kbd> (Mac)</li>
+    </ul>
+</blockquote>
+<p>Click on Editor on the left side of the dialog box, and press <kbd>&rarrow;</kbd> to expand the list</p>
+<p>Click on File and Code Templates</p>
+<p><img src="images/pycharm64_QaNtoRyhrP.png"/></p>
+
+<p>On the Right side of the Dialog box, now locate the "Python Script" entry, and click on it.</p>
+<p><img src="images/pycharm64_kuiN1ri0hv.png"/></p>
+<p>In the editor area that is now shown add:</p>
+<pre><code>#parse ("header.py")
+
+    def print_hi(name):
+        print(f'Hi, {name}')
+
+if __name__ == '__main__':
+    print_hi('Python')
+</code></pre>
+<p><img src="images/pycharm64_Vo2JOCZxHp.png" height="271" width="389"/></p>
+<p><br></p>
+<p>Click APPLY to save the changes.</p>
+<p><br></p>
+<p>Now click on the Includes tab</p>
+<p><img src="images/pycharm64_mQ5YtrFgfE.png" height="176" width="361"/></p>
+<p>Click on the + sign to create a new include file</p>
+<p><img src="images/pycharm64_9ePR1VZFJh.png" height="138" width="284"/></p>
+<p>In the name on the right side enter <code>header</code> and the extension should be <code>py</code>.</p>
+<p><img src="images/pycharm64_QSYV3GcCLR.png" height="387" width="939"/></p>
+<p>In the editor area add:</p>
+<p><br></p>
+<p>
+<pre><code>
+"""
+ADD APP/SCRIPT/MODULE TITLE
+
+ADD SUMMARY OF APP/SCRIPT/MODULE HERE
+
+------------------------------------------------------------------------------
+Project:    ${PROJECT_NAME}
+Folder:     ${DIR_PATH}
+Filename:   ${FILE_NAME}
+Author:     YOUR_NAME &lt;YOUR_EMAIL_ADDRESS&gt;
+Version:    0.0
+------------------------------------------------------------------------------
+"""
+</code></pre>
+<p>Remembering to replace <b>YOUR_NAME</b> and <b>YOUR_EMAIL_ADDRESS</b> with your name and email address, respectively.</p>
+<p><br></p>
+<p>Click Apply and then Click OK</p>
+<p><br></p>
+<p>Now try creating a new Python File.</p>
+<p>You should get results similar to this:</p>
+<p><img src="images/pycharm64_SGeLSnBOnR.png"> </p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</body>
+</html>
