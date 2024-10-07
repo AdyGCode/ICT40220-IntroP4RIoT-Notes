@@ -18,3 +18,26 @@ The two videos from the class were:
 - Python Object-Oriented Programming (OOP) - For Beginners https://www.youtube.com/watch?v=lbXsrHGhBAU
 
 
+## Link to GitHub Content
+
+- https://github.com/NM-TAFE/civ-ipriot-in-class-demos/blob/2024/s2/raf/week12/lesson.md
+
+
+## Exercises (from above link)
+
+### Exercise 1
+
+- Create a class Shape with an abstract method area. 
+- Create two subclasses Circle and Rectangle that inherit from Shape.
+- Implement the area method for each subclass.
+
+### Exercise 2
+
+- Create a BankAccount class with private attributes for account_number 
+  and balance. 
+- Implement methods to deposit, withdraw, and view the current balance.
+
+# Exercise 3
+
+- Work on KBA 2 answers.
+- DO NOT SUBMIT until told.

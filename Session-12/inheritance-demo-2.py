@@ -32,6 +32,14 @@ def demo():
 
 
 
+def talk_to_the_animals(animal):
+    print("hello, Animal")
+    animal.speak()
+
 
 if __name__ == '__main__':
     demo()
+    cat2 = Cat("Raf", "green")
+    dog2 = Dog("Woof")
+    talk_to_the_animals(cat2)
+    talk_to_the_animals(dog2)

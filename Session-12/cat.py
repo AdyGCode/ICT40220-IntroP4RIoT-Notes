@@ -14,7 +14,8 @@ from animal import Animal
 
 
 class Dog(Animal):
-    pass
+    def speak(self):
+        print(f"{self.name} barks")
 
 
 class Cat(Animal):
@@ -28,10 +29,10 @@ class Cat(Animal):
 
     def speak(self):
         # Override the Animal.speak method
-        print(f"{self.name} meows")
+        print(f"{self.get_name()} meows")
 
     def purr(self):
-        print(f"{self.name} purrs")
+        print(f"{self.get_name()} purrs")
 
     def get_name(self):
         return self._name

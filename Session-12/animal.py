@@ -10,13 +10,15 @@ Version:   0.0
 ------------------------------------------------------------------------------
 """
 
+from abc import ABC, abstractmethod
 
-class Animal:
+
+class Animal(ABC):
     def __init__(self, name):
         self.name = name
 
-    def speak(self):
-        print(f"{self.name} speaks")
+    def speak(self): ...
+        # print(f"{self.name} speaks")
 
 
 if __name__ == '__main__':
