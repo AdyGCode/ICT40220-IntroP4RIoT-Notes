@@ -13,13 +13,24 @@ Version:   0.0
 ------------------------------------------------------------------------------
 """
 
-from cat import Cat
-
+from cat import Cat, Dog
+from animal import Animal
 
 def demo():
-    cat = Cat('Whiskers')
+    cat = Cat('Whiskers', 'black')
     cat.speak()  # speaks
     cat.purr()  # purrs
+
+    dog = Dog("Rover")
+    dog.speak()
+
+    print(type(cat) is Cat)
+    print(type(cat) is Animal)
+
+    print(isinstance(cat, Cat))
+    print(isinstance(cat, Animal))
+
+
 
 
 if __name__ == '__main__':

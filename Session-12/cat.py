@@ -13,9 +13,31 @@ Version:   0.0
 from animal import Animal
 
 
+class Dog(Animal):
+    pass
+
+
 class Cat(Animal):
+    def __init__(self, name, colour):
+        # Override the Animal.__init__
+        # Use the super() method to execute the Animal.__init__
+        # super().__init__(name)
+        self._name = None
+        self.set_name(name)
+        self.colour = colour
+
+    def speak(self):
+        # Override the Animal.speak method
+        print(f"{self.name} meows")
+
     def purr(self):
         print(f"{self.name} purrs")
+
+    def get_name(self):
+        return self._name
+
+    def set_name(self, name):
+        self._name = name
 
 
 if __name__ == '__main__':
