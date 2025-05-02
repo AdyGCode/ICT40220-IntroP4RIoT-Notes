@@ -1,3 +1,9 @@
+"""
+It's raining Cats & Dogs
+
+Demo of (Simple) Classes in Python
+"""
+
 class Cat:
     def __init__(self, name, age, coat_colour):
         # constructor (initializer)
@@ -56,6 +62,9 @@ pug = Dog('Rover', 2)
 
 tabby.meow()
 black.purr()
+
+spaniel.wag()
+pug.bark()
 
 black.meet(tabby)
 tabby.meet(spaniel)
