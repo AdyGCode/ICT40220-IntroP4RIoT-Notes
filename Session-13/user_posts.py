@@ -13,6 +13,7 @@ class User:
         self.posts.append(post)
 
     def show_posts(self):
+        print(f"{self.username}'s Posts:")
         for post in self.posts:
             post.display_post()
 
