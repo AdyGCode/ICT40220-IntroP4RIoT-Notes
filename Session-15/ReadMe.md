@@ -1,7 +1,7 @@
 # Session 15 : Unit Tests
 
 
-For details on Abstract Classes, Interfaces and other OOP see [Session 13](../Session-13)
+For more details on Abstract Classes, Interfaces and other OOP see [Session 13](../Session-13)
 
 
 

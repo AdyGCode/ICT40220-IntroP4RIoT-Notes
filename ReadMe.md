@@ -7,7 +7,7 @@
 
 ### Diigo 
 
-Adrian Gou,ld has used Diigo for a long time, and has many links to resources he has found 
+Adrian Gould has used Diigo for a long time, and has many links to resources he has found 
 and used for more than 20 years. 
 
 - Adrian Gould's Diigo Account https://diigo.com/profile/ady_gould
