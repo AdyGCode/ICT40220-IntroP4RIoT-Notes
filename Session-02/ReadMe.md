@@ -1,37 +1,10 @@
-# Session 02
+# Session 03
 
-## Settings for PyCharm
+Conversation with AI
 
-Zoom editor
+These conversations MAY NOT be valid. AI such as ChatGPT, Claude, DeepSeek are not able to 
+determine the validity of their responses, they are restricted in their ability to analyse.
 
-the quick brown fox jumps over the
-lazy dog
+Use any of these conversations as a STARTING POINT to assist you in answering questions.
 
-*Italics* 
-
-_Italics_
-
-**Bold**
-
-## Bullet List
-
-- Item 1
-- Item 2
-- Item 3
-
-## Numbered List
-
-1. Item 1
-2. Item 2
-3. Item 3
-
-## Blockquote
-
-> So long, and thanks for all the fish
-
-## Code Block
-
-```python
-print("Hello")
-```
-
+It is important to double and triple-check any AI generated content.
