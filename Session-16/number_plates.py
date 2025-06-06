@@ -11,8 +11,20 @@ class NumberPlates:
 
     """
 
-    def __init__(self):
-        self.plate = ""
+    def __init__(self,letter_count=3,number_count=3,separator="-"):
+        """
+        Instantiate the NumberPlate class
+
+        Parameters
+        ----------
+        letter_count : int : number of letters on plate
+        number_count : int : number of numbers on plate
+        separator : string : character to place between letters and numbers
+
+        """
+        self.letter_count=letter_count
+        self.number_count=number_count
+        self.separator=separator
 
     def create(self):
         """
@@ -32,30 +44,31 @@ class NumberPlates:
         letter_list = list(string.ascii_lowercase)
         number_list = list(string.digits)
 
-        for count in range(3):
+        for count in range(self.letter_count):
             characters.append(random.choice(list(letter_list)))
-        characters.append("-")
-        for count in range(3):
+        characters.append(self.separator)
+        for count in range(self.number_count):
             characters.append(random.choice(list(number_list)))
 
-        return ("".join(characters)).upper()
+        return  ("".join(characters)).upper()
 
 
 if __name__ == "__main__":
-    number_plate = NumberPlates()
+    # Number plates will have 5 letters, ":" and 3 numbers.
+    number_plate = NumberPlates(5,3,":")
     plate = number_plate.create()
     print(plate)
     print()
 
-    # create number plate instance
+    # create number plate instance (with default LLL-NNN)
     number_plate = NumberPlates()
     # set up empty list of number plates
     plates = []
     # generate random starter number plate
     new_plate = number_plate.create()
 
-    # generate a list of 100 random number plates
-    for count in range(100):
+    # generate a list of 30 random number plates
+    for count in range(30):
         while new_plate in plates:
             new_plate = number_plate.create()
         plates.append(new_plate)
