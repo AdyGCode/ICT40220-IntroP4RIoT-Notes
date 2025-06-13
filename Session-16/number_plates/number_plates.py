@@ -11,7 +11,7 @@ class NumberPlates:
 
     """
 
-    def __init__(self,letter_count=3,number_count=3,separator="-"):
+    def __init__(self, letter_count=3, number_count=3, separator="-"):
         """
         Instantiate the NumberPlate class
 
@@ -22,9 +22,9 @@ class NumberPlates:
         separator : string : character to place between letters and numbers
 
         """
-        self.letter_count=letter_count
-        self.number_count=number_count
-        self.separator=separator
+        self.letter_count = letter_count
+        self.number_count = number_count
+        self.separator = separator
 
     def create(self):
         """
@@ -50,4 +50,4 @@ class NumberPlates:
         for count in range(self.number_count):
             characters.append(random.choice(list(number_list)))
 
-        return  ("".join(characters)).upper()
+        return ("".join(characters)).upper()

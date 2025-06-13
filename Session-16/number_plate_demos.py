@@ -1,9 +1,9 @@
-from number_plates import number_plates as NumberPlates
+from number_plates.number_plates import NumberPlates
 
 
 if __name__ == "__main__":
     # Number plates will have 5 letters, ":" and 3 numbers.
-    number_plate = NumberPlates(5,3,":")
+    number_plate = NumberPlates(5, 3, ":")
     plate = number_plate.create()
     print(plate)
     print()
