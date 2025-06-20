@@ -14,6 +14,19 @@ class Calculations:
         Returns
         -------
         int | float | complex
+
+        Examples
+        --------
+        >>> c = Calculations()
+        >>> c.add(1,2)
+        3
+        >>> c.add(1,2.5)
+        3.5
+        >>> c.add(1,2+1j)
+        (3+1j)
+        >>> c.add(-5+3j,0+2j)
+        (-5+5j)
+
         """
 
         if type(first_number) not in [int, float, complex]:
